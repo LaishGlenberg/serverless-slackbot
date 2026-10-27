@@ -4,7 +4,7 @@ A design exploration for a serverless, stateful Slack coding agent.
 
 The goal: users get a full coding agent in a Slack thread — not a single completion — while the system stays cheap at low traffic and survives cold starts. The proposed middle ground is a warm Slack gateway plus one short-lived Cloud Run Job per turn, with the conversation and workspace persisted outside the container.
 
-> **Status: design only.** Nothing here is approved or implemented yet. The architecture is in [`ARCHITECTURE.md`](ARCHITECTURE.md); proposed answers to its open questions are in [`PROPOSALS.md`](PROPOSALS.md).
+> **Status: design only.** Nothing here is approved or implemented yet. The architecture is in [`ARCHITECTURE.md`](ARCHITECTURE.md); proposed answers to its open questions are in [`PROPOSALS.md`](PROPOSALS.md); the shortest path to a working demo is in [`QUICKSTART.md`](QUICKSTART.md).
 
 ## The problem
 
@@ -44,4 +44,4 @@ flowchart LR
 
 ## Next step
 
-Read [`ARCHITECTURE.md`](ARCHITECTURE.md) and [`PROPOSALS.md`](PROPOSALS.md), challenge the assumptions, and decide the open questions before scaffolding code.
+Read [`ARCHITECTURE.md`](ARCHITECTURE.md) and [`PROPOSALS.md`](PROPOSALS.md), challenge the assumptions, and decide the open questions. If you want something running first, use [`QUICKSTART.md`](QUICKSTART.md) to build the single-service MVP and upgrade from there.
